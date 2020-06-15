@@ -14,11 +14,9 @@ Para executar o projeto, você pode utilizar o Visual Studio, VSCode, ou o CLI.
 
 Para rodar no Visual Studio, abra o arquivo `ExemploApi.sln` na raiz deste projeto. Clique, em seguida, no botão de iniciar depuração, na barra superior. Alternativamente, você pode pressionar a tecla `F5`, que esta ação será executada da mesma forma. Aceite a instalação dos certificados SSL caso a IDE o peça.
 
-Para utilizar no VSCode, abra o diretório onde você baixou este repositório no editor. Instale a extensão C#. Na barra lateral, clique na opção de `Debug` (ou pressiona Ctrl+D), e execute.
+Para utilizar no VSCode, abra o diretório onde você baixou este repositório no editor. Instale a extensão C#. Na barra lateral, clique na opção de `Debug` (ou pressione Ctrl+D), e execute.
 
-No CLI, simplesmente abra um terminal no diretório onde você baixou o repositório, e execute o comando
-
-`dotnet run`
+No CLI, simplesmente abra um terminal no diretório onde você baixou o repositório, e execute o comando `dotnet run`.
 
 Ao executar, independentemente do método, atente-se à porta onde o serviço estará rodando. Você pode vê-la nas mensagens de log exibidas após a execução. Normalmente, esta porta é padrão, 5000. 
 
@@ -66,15 +64,15 @@ Nas rotas que apresentam algo como _{id}_, este pedaço da Uri é uma variável,
     **Edita um livro especificado pelo seu id**
 
     No corpo da requisição você deverá descrever, em JSON, todos os dados do livro que será editado, no seguinte modelo:
-        ````
-            {
-                "titulo": "string",
-                "autor": {
-                    "nome": "string",
-                    "pais": "string"
-                }
+    ````
+        {
+            "titulo": "string",
+            "autor": {
+                "nome": "string",
+                "pais": "string"
             }
-        ````
+        }
+    ````
 
  - DELETE /api/v1/livros/{id} 
  
