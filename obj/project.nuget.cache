@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ac6XWnpWUlcSDqD6fOSok8DtWyuHw16lSmEK1Bq8aeq6NyzasaeWydggtTWsQfOKJasT83y33mSPYcP2gElO3A==",
+  "success": true,
+  "projectFilePath": "D:\\GABRIEL\\Programacao\\Experimentos\\dotnet\\ExemploApi\\ExemploApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
