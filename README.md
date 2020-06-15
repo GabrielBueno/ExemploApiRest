@@ -8,11 +8,19 @@ Ou baixe este repositório clicando em **Clone or download** > **Download ZIP**,
 
 ## Compilando e executando
 
-Para executar este projeto, você precisará instalar o [.NET Core SDK 3.1](https://dotnet.microsoft.com/download).
+Antes de executar este projeto, você precisará instalar o [.NET Core SDK 3.1](https://dotnet.microsoft.com/download).
 
-Para executar o projeto, você pode abri-lo no Visual Studio, pelo arquivo .sln na raiz do projeto; Pelo VSCode, com a extensão C#; ou por linha de comando, abrindo um terminal na raiz do projeto, e executando o comando `dotnet run`. 
+Para executar o projeto, você pode utilizar o Visual Studio, VSCode, ou o CLI.
 
-Ao executar, atente-se à porta onde o serviço estará rodando. Você pode vê-la nas mensagens de log exibidas após a execução. Normalmente, esta porta é padrão, 5000. 
+Para rodar no Visual Studio, abra o arquivo `ExemploApi.sln` na raiz deste projeto. Clique, em seguida, no botão de iniciar depuração, na barra superior. Alternativamente, você pode pressionar a tecla `F5`, que esta ação será executada da mesma forma. Aceite a instalação dos certificados SSL caso a IDE o peça.
+
+Para utilizar no VSCode, abra o diretório onde você baixou este repositório no editor. Instale a extensão C#. Na barra lateral, clique na opção de `Debug` (ou pressiona Ctrl+D), e execute.
+
+No CLI, simplesmente abra um terminal no diretório onde você baixou o repositório, e execute o comando
+
+`dotnet run`
+
+Ao executar, independentemente do método, atente-se à porta onde o serviço estará rodando. Você pode vê-la nas mensagens de log exibidas após a execução. Normalmente, esta porta é padrão, 5000. 
 
 ## Recursos e endpoints
 
@@ -30,11 +38,18 @@ Nas rotas que apresentam algo como _{id}_, este pedaço da Uri é uma variável,
 
 ## Rotas
 
- - GET /api/v1/livros **Obtém todos os livros**
+ - GET /api/v1/livros 
 
- - GET /api/v1/livros/{id} **Obtém um livro por id**
+    **Obtém todos os livros**
 
- - POST /api/v1/livros **Cria um livro**
+ - GET /api/v1/livros/{id} 
+
+    **Obtém um livro por id**
+
+ - POST /api/v1/livros 
+ 
+    **Cria um livro**
+
     No corpo da requisição você deverá descrever, em JSON, o livro que será criado, no seguinte modelo:
     ````
         {
@@ -46,7 +61,10 @@ Nas rotas que apresentam algo como _{id}_, este pedaço da Uri é uma variável,
         }
     ````
 
- - PUT /api/v1/livros/{id} **Edita um livro especificado pelo seu id**
+ - PUT /api/v1/livros/{id} 
+ 
+    **Edita um livro especificado pelo seu id**
+
     No corpo da requisição você deverá descrever, em JSON, todos os dados do livro que será editado, no seguinte modelo:
         ````
             {
@@ -58,5 +76,7 @@ Nas rotas que apresentam algo como _{id}_, este pedaço da Uri é uma variável,
             }
         ````
 
- - DELETE /api/v1/livros/{id} **Obtém um livro por id**
+ - DELETE /api/v1/livros/{id} 
+ 
+    **Desativa um livro, especificado pelo seu id**
 
